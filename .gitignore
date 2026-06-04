@@ -1,14 +1,7 @@
----
-
-### `.gitignore`
-
-```gitignore
-# === Core OS / System Files ===
 .DS_Store
 Thumbs.db
 *.log
 
-# === Local Configurations & Secrets ===
 .env
 .env.local
 .env.production
@@ -16,7 +9,6 @@ Thumbs.db
 *.key
 *.secret
 
-# === Python / Backend Dependencies ===
 __pycache__/
 *.py[cod]
 *$py.class
@@ -27,12 +19,10 @@ build/
 dist/
 *.egg-info/
 
-# === Container / Runtime Cache ===
 .docker/
 *.tar
 *.tar.gz
 
-# === Infrastructure-as-Code (Terraform) ===
 .terraform/
 *.tfstate
 *.tfstate.backup
@@ -41,7 +31,6 @@ dist/
 .terraform.lock.hcl
 crash.log
 
-# === Testing & Quality Reports ===
 .pytest_cache/
 htmlcov/
 .coverage
@@ -49,4 +38,3 @@ coverage.xml
 *.cover
 tfsec-report.json
 checkov-report.json
-```</EOF>
